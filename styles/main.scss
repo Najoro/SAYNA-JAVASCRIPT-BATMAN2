@@ -1,0 +1,698 @@
+@use "abstract" as *;
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    scroll-behavior: smooth;
+}
+
+#home_body {
+    background-color: #000;
+    background-image: url("../Home/Bathome1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.aside {
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    left: 50%;
+    z-index: 2;
+    .aside-item {
+        @include flex-center(column,
+        center);
+        gap: 20px;
+        position: absolute;
+        transform: translate(50%, -50%);
+        right: 0;
+    }
+}
+
+h1 {
+    font-family: rajhdani;
+    color: #fff;
+}
+
+p {
+    font-family: spaceGrotesk;
+    color: #fff;
+}
+
+h6 {
+    font-family: rajhdani;
+    color: #fff;
+}
+
+// head
+header {
+    margin: 0 auto;
+    width: 85%;
+    @extend %bordur;
+    border-bottom: $border-style;
+    .link_header {
+        @include flex-center(row,
+        space-between);
+        padding: 40px;
+        &_grp a {
+            font-family: rajhdani;
+            color: #fff;
+            font-size: 36px;
+            @include margin(0,
+            15px,
+            15px);
+            text-decoration: none;
+        }
+        .indexhome {
+            font-weight: bold;
+            text-decoration: underline;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 0.6rem;
+        }
+        .indexgame {
+            font-weight: bold;
+            text-decoration: underline;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 0.6rem;
+        }
+    }
+}
+
+// begin section entete
+.container {
+    margin: 0 auto;
+    @include flex-center(column,
+    center);
+    &_paragraphe {
+        @include margin(200px,
+        0,
+        0);
+        width: 570px;
+        font-family: spaceGrotesk;
+        color: #fff;
+        text-align: center;
+        font-size: 22px;
+    }
+    .title_batman {
+        @include margin(40px,
+        0,
+        0);
+        font-family: spaceGrotesk;
+        font-size: 36px;
+        color: #fff;
+    }
+    &_grpButton {
+        @include margin(30px,
+        0,
+        0);
+    }
+    a {
+        font-family: rajhdani;
+        color: #fff;
+        font-size: 20px;
+        text-decoration: none;
+        display: inline-block;
+        width: 250px;
+        text-align: center;
+        line-height: 60px;
+        @include margin(0,
+        15px,
+        15px);
+        @extend %bgg_Button;
+    }
+    &_flecheDown {
+        @include flex-center(column,
+        center);
+        @include margin(140px,
+        0,
+        0);
+    }
+}
+
+//end section entete
+.box {
+    padding: 50px;
+    margin: auto;
+    position: relative;
+    &_paragraphe {
+        width: 800px;
+        p {
+            text-align: justify;
+            font-size: 18px;
+        }
+    }
+    &_card {
+        @include margin(60px,
+        0,
+        0);
+    }
+    &_card {
+        @include flex-center(row,
+        space-between);
+        width: 100%;
+        background-color: black;
+    }
+}
+
+.item_actor {
+    background: rgba(180, 131, 70, 0.1);
+    border-top: 1px #4e411db6 solid;
+    height: 80px;
+    @include flex-center(row,
+    center);
+    position: relative;
+    .acteur {
+        @include flex-center(column,
+        center);
+        @extend %bgg_Button;
+        width: 240px;
+        height: 70px;
+        border-radius: 40px;
+        img {
+            position: absolute;
+            width: 80px;
+            top: 7px;
+            left: 15px;
+        }
+        h6 {
+            @include margin(0,
+            0,
+            5px);
+            font-size: 10px;
+            width: 120px;
+            text-align: center;
+        }
+    }
+}
+
+// faddincard
+.Mutli {
+    margin: 0 auto;
+    .txt_presentation {
+        padding: 60px
+    }
+}
+
+.cart_faddin {
+    @include flex-center(row,
+    space-between);
+    padding: 60px;
+}
+
+.cart1 {
+    width: 600px;
+    @extend %cartfaddin;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    h1 {
+        font-size: 18px;
+        font-weight: 300;
+        margin: 15px;
+    }
+    h2 {
+        font-family: rajhdani;
+        font-size: 15px;
+        font-weight: 300;
+        margin: 15px;
+    }
+    h3 {
+        font-family: rajhdani;
+        font-size: 15px;
+        font-weight: 300;
+        @include margin(0,
+        0,
+        15px);
+        span {
+            color: $yellow;
+        }
+    }
+    p {
+        font-size: 12px;
+        @include margin(0,
+        0,
+        15px);
+    }
+}
+
+.bande_annonce {
+    padding: 60px;
+    position: relative;
+    .iconPlayer {
+        width: 10%;
+        position: absolute;
+        top: 41%;
+        right: 45%;
+        cursor: pointer;
+    }
+}
+
+.dropdown-in {
+    position: relative;
+    display: inline-block;
+    width: 99%;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+
+.dropdown {
+    margin-top: 10px;
+}
+
+.dropdown-content {
+    font-family: spaceGrotesk;
+    margin-top: 20px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+
+/* Links inside the dropdown */
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+/* Change color of dropdown links on hover */
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+
+/* Show the dropdown menu on hover */
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    margin-top: 0px;
+    width: 59.5%;
+}
+
+.contact {
+    background: $bgc_newsletter;
+    width: 100%;
+    color: white;
+    &-bloc {
+        margin: 0 auto;
+        width: 60%;
+    }
+    form h1 {
+        text-align: center;
+        padding: 50px;
+    }
+    form label {
+        font-family: spaceGrotesk;
+        font-weight: 400;
+    }
+    form .label1,
+    form h3 {
+        font-size: 20px;
+    }
+    form .label2 {
+        display: inline-block;
+        width: 65%;
+        @include margin(30px,
+        0,
+        0);
+        font-family: spaceGrotesk;
+        font-weight: 400;
+        color: $grey;
+    }
+    form input[type="text"] {
+        width: 100%;
+        padding-top: 10px;
+        font-family: spaceGrotesk;
+        @include margin(12px,
+        0,
+        0);
+        outline: none;
+        border: none;
+        background-color: transparent;
+        border-bottom: 1px solid $grey;
+        color: white;
+        font-size: 18px;
+    }
+    form p {
+        margin-top: 12px;
+        border-bottom: 1px solid #c4c4c4;
+        color: $grey;
+    }
+    form h3 {
+        font-family: spaceGrotesk;
+        font-weight: 400;
+        @include margin(12px,
+        0,
+        0);
+        margin-bottom: 12px;
+    }
+}
+
+.btn-groupe {
+    @extend %btn-groupe-contact;
+}
+
+textarea {
+    @extend %textarea;
+}
+
+.bloc-confirmer {
+    margin-top: 14px;
+    padding: 50px;
+    text-align: center;
+    .confirmer {
+        @extend %confirmer;
+    }
+}
+
+//main
+//footer
+.bloc-citation {
+    width: 85%;
+    margin: 0 auto;
+    @extend %bordur;
+    @include flex-center(row,
+    center);
+    .sect-citation {
+        width: 50%
+    }
+}
+
+.citation {
+    max-width: 80%;
+    text-align: center;
+    display: block;
+}
+
+.item-citation {
+    display: flex;
+    padding: 30px;
+}
+
+.item-citation2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cit2 {
+    margin: 12px;
+    font-size: 12px;
+    text-align: center;
+    width: 200px;
+}
+
+.item-citation3 {
+    justify-content: flex-end;
+}
+
+.nav-footer {
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 40px;
+}
+
+.petit-presentation {
+    font-size: 1.2vw;
+    line-height: 20px;
+}
+
+.petit-presentation>img {
+    width: 20px;
+}
+
+.bloc-icon {
+    margin-top: 23px;
+    @include flex-center(row,
+    center);
+}
+
+.bloc-icon>div {
+    margin: 12px;
+}
+
+.bloc-icon>div>img {
+    width: 20px;
+    height: 20px;
+}
+
+.nav-footer {
+    width: 85%;
+    margin: 0 auto;
+    @extend %bordur;
+}
+
+.corp {
+    margin-left: -91000px;
+}
+
+.bgclick {
+    background-color: #49a2c9b2;
+    border: solid 1px #70aec9;
+}
+
+// section game
+#game_body {
+    background-color: #000;
+    background-image: url("../Game/Batgame_1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.play_presentation {
+    margin: 0 auto;
+    width: 85%;
+    color: white;
+    h1 {
+        font-family: rajhdani;
+        font-size: 46px;
+        padding-left: 50px;
+        padding-top: 150px;
+        padding-bottom: 100px;
+    }
+    .container_flecheDown {
+        padding-bottom: 80px
+    }
+    @extend %bordur;
+}
+
+.Quizz {
+    margin: 0 auto;
+    width: 75%;
+    padding: 5%;
+    @extend %bordur;
+    .G0 {
+        @include flex-center(column,
+        center);
+        h1 {
+            text-transform: uppercase;
+            font-size: 30px;
+        }
+        .img_game {
+            margin-top: 30px;
+            width: 80%;
+        }
+        .quiz_btn {
+            @extend %quizBtn;
+            margin-top: 50px;
+        }
+    }
+}
+
+.content a img:hover,
+.link_logo a img:hover {
+    @extend %yellow_filter;
+}
+
+.G1 {
+    h1 {
+        text-align: center;
+        padding-top: 80px;
+        padding-bottom: 80px
+    }
+    button {
+        margin-top: 40px;
+        @extend %quizBtn;
+    }
+}
+
+//animation
+.link_header_grp a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.6rem;
+}
+
+.justiceLeague {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.container,
+.box,
+.justiceLeague,
+.Mutli,
+.contact {
+    position: relative;
+    animation: mymove 3s;
+}
+
+@keyframes mymove {
+    from {
+        left: -100%;
+    }
+    to {
+        left: 0%;
+    }
+}
+
+.allBorder,
+.allBorder2 {
+    @extend %bordur;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.item_actor {
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 120px;
+}
+
+.box_card {
+    height: 600px;
+}
+
+.box_card .item {
+    position: relative;
+}
+
+.box_card .item:hover {
+    transform: scale(1.1);
+    transition-duration: 1s;
+    .item_actor {
+        visibility: visible;
+    }
+}
+
+.caherOUI {
+    opacity: 0;
+    transform: translateX(-200px);
+}
+
+.caherNON {
+    opacity: 1;
+    transform: translateX(0);
+    transition: 800ms;
+}
+
+@keyframes changeOpacity {
+    0% {
+        opacity: 1;
+        background-color: rgb(0, 77, 243);
+        border: 1px solid rgb(182, 0, 0);
+    }
+}
+
+.question_bloc {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 50px;
+    .img-question {
+        width: 300px;
+    }
+    .questionsComposition {
+        width: 650px;
+        div {
+            color: #fff;
+            background-color: $grey;
+            margin: 5px;
+            padding: 8px;
+            label {
+                font-size: 24px;
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+.boutonConf {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    button {
+        @extend %quizBtn;
+        margin-top: 100px;
+    }
+}
+
+.popup {
+    position: absolute;
+    width: 70%;
+    top: 220px;
+    left: 250px;
+    &-content {
+        background: $grad-orange-opaque-2;
+        width: 80%;
+        max-width: 500px;
+        margin: 0 auto;
+        text-align: center;
+        border-radius: 4px;
+        padding: 4rem 2rem;
+        box-shadow: 0 0 10rem 0 $black-3;
+        position: relative;
+        h1 {
+            text-decoration: underline;
+        }
+    }
+    &-close-btn {
+        position: absolute;
+        right: 1rem;
+        top: 0.75rem;
+        cursor: pointer;
+        color: white;
+    }
+    &-title {
+        margin-bottom: 3.5rem;
+        display: inline-block;
+        position: relative;
+        text-transform: uppercase;
+        &::after {
+            // we use the ::after to be able to add some spaces between the text and the underline
+            content: "";
+            position: absolute;
+            top: 102%;
+            left: 0;
+            width: 100%;
+        }
+    }
+    &-body {
+        margin-bottom: 3.5rem;
+    }
+}
+
+#btn-start-quizz {
+    @extend %quizBtn;
+}

@@ -1,65 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Game/styles/index.css">
-    <title>Game</title>
+    <title>BATMAN T4SU</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
 </head>
-<body>
-    <img src="./Game/Illustrations/Batgame_1.png" class="bg" alt="" />
-    <header>
-      <img src="./Home/Assets/Logos/logohome.png" alt="logo" />
-      <ul>
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./game.html">Game</a></li>
-      </ul>
-    </header>
-    
-  <main>
-    <section>
-      <div class="batman">
-        <h1>LET’s play a  <br> little game...</h1>
-      </div>
 
-      <div class="icons">
-        <img src="./Home/Assets//Logos/logo_bat_flèche.png" alt="" />
-        <img src="./Home/Assets//Logos/icon_facebook.png" alt="" />
-        <img src="./Home/Assets//Logos/icon_ig.png" alt="" />
-        <img src="./Home/Assets//Logos/icon_tw.png" alt="" />
-        <img src="./Home/Assets//Logos/logo_bat_flèche_2.png" alt="" />
-      </div>
-      <img src="./Home/Assets/Logos/flèche_down_header.png" class="fleche-bas" alt="" />
-    </section>
-    <div class="main-contenue">
-        <h1>connaissez vous bien le chevalier noir ?</h1>
-        <div class="images-container">
-          <div class="card-image">
-            <img src="./Game/Illustrations/Batgame_2.png" alt="">
-            <p class="buttons">
-              <button>DÉMARRER LE QUIZ</button>
-            </p>
-          </div>
-      </div>
-  </main>
-  <footer>
-    <div class="footer-contenaire">
-      <div class="autre">
-        <span>
-          <img src="./Home/Assets/Logos/icon_WB.png" alt="">
-          <p>Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves</p>
-        </span>
-        <span class="footer-icones">
-          <img src="./Home/Assets/Logos/logo_sayna_white.png" alt="">
-          <img src="./Home/Assets/Logos/icon_x.png" alt="">
-          <img src="./Home/Assets/Logos/icon_DC.png" alt="">
-          <img src="./Home/Assets/Logos/icon_facebook.png" alt="">
-          <img src="./Home/Assets/Logos/icon_ig.png" alt="" >
-          <img src="./Home/Assets/Logos/icon_tw.png" alt="">
-        </span>
-      </div>
+<body id="game_body">
+    <div class="aside">
+        <div class="aside-item">
+            <div class="content">
+                <a href="#survole-haut" class="survole allLogos3"><img class="logoAside" src="Logos/logo_bat_flèche.png" alt="flèche pour remonter en haut"></a>
+            </div>
+            <div class="content">
+                <a href=""> <img class="logoAside effet_jaune allLogos4" src="Logos/icon_facebook.png" alt=""></a>
+            </div>
+            <div class="content">
+                <a href=""> <img class="logoAside effet_jaune allLogos5" src="Logos/icon_ig.png" alt=""></a>
+            </div>
+            <div class="content">
+                <a href=""> <img class="logoAside effet_jaune allLogos6" src="Logos/icon_tw.png" alt=""></a>
+            </div>
+            <div class="content">
+                <a href="#survole_pied" class="survole "><img class="logoAside allLogos7" src="Logos/logo_bat_flèche_2.png" alt="flèche pour aller vers footer"></a>
+            </div>
+        </div>
     </div>
-  </footer>
+    <header id="survole-haut">
+        <nav class="link_header">
+            <div class="link_logo">
+                <a href="index.html"><img src="Logos/logohome.png" alt="Logo home"></a>
+            </div>
+            <div class="link_header_grp">
+                <a href="index.html">HOME</a>
+                <a href="Game.html" class="indexgame">GAME</a>
+            </div>
+        </nav>
+    </header>
+    <!--begin section entete -->
+    <div class="play_presentation">
+        <h1 class="title_batman">LET’S PLAY A <br> LiTTLE GAME...</h1>
+        <div class="container_flecheDown">
+            <img src="Logos/flèche_down_header.png" alt="flèche vers le bas">
+        </div>
+    </div>
+    <!-- ici commence le game -->
+    <div class="Quizz">
+        <div class="G0">
+            <h1>connaissez vous bien le chevalier noir ?</h1>
+            <div class="img_game">
+                <img src="Game/Batgame_2.png" alt="" width="100%" height="auto">
+            </div>
+            <button class="quiz_btn">DÉMARRER LE QUIZ</button>
+        </div>
+        <div class="questions">
+
+            <h1 style="text-align: center;"><span class="level">1</span>/<span>15</h1>
+                <form>
+                <div class="question_bloc">
+                    <div class="img-question">
+                        <img class="left" src="Game/Batgame_3.png" alt="">
+                    </div>
+                    
+                        <div class="questionsComposition">
+                                     <h1 class="quest">Question 1</h1>
+                                    <div><input type="checkbox" name="val" value="0"><label class="rep1">Response1</label></div>
+                                    <div><input type="checkbox" name="val" value="1"><label class="rep2">Response2</label></div>
+                                    <div><input type="checkbox" name="val" value="2"><label class="rep3">Response3</label></div>                                   
+
+                        </div>
+                    
+                </div>
+                <div class="boutonConf">
+                    <img src="Game/Batgame_18.png" alt="" width="130px" height="auto" class="left-btn">
+                    <button class="validResponse">QUESTION SUIVANT</button>
+                    <img src="Game/Batgame_18.png" alt="" width="130px" height="auto" class="right-btn">
+                </div>
+            </form>
+            
+        </div>
+
+    </div>
+    <!-- fin du section game -->
+    <!-- footer section -->
+    <footer class="pied">
+        <div class="foot-citation">
+
+            <div class="nav-footer">
+                <p class="petit-presentation"><img src="Logos/icon_WB.png" alt="logo warner bros"> Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves</p>
+                <div class="bloc-icon">
+                    <div class="grp-icon1">
+                        <img src="Logos/logo_sayna_white.png" id="logo_foot" alt="" class="allLogos">
+                        <img src="Logos/icon_x.png" alt="">
+                        <img src="Logos/icon_DC.png" alt="" id="logo_foot" class="allLogos">
+                    </div>
+                    <div class="grp-icon2" id="survole_pied">
+                        <img src="Logos/icon_facebook.png" alt="logo facebook" id="logo_foot" class="allLogos">
+                        <img src="Logos/icon_ig.png" alt="logo instagram" id="logo_foot" class="allLogos">
+                        <img src="Logos/icon_tw.png" alt="logo twiter" id="logo_foot" class="allLogos">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <article class="popup">
+        <div class="popup-content">
+          <span class="popup-close-btn">X</span>
+                <h1>
+                    <span class="level">0 </span>/10
+                    <span class="text-info">Remplacer</span>
+                </h1>
+                <div class="popup-body">
+                    <!-- HERE GOES THE BODY OF THE POPUP -->
+                    <p class="information-gameover">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae minima illo possimus asperiores veritatis quas et ipsum, obcaecati, commodi quibusdam, molestiae delectus laborum provident! Velit adipisci voluptate neque possimus ipsum.</p>
+                </div>
+                <button id="btn-start-quizz" type="button" class="btn btn-translucent-yellow">Recommencer le quizz
+          </button>
+        </div>
+        </article>
+        <script src="js/gameTraitement.js"></script>
+
 </body>
+
 </html>

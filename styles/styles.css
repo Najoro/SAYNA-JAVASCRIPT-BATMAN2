@@ -1,0 +1,743 @@
+.container a, .item_actor .acteur {
+  background: linear-gradient(123deg, rgba(237, 222, 191, 0.5) 0%, rgba(137, 0, 9, 0.5) 90%);
+}
+
+.cart1 {
+  background: linear-gradient(123deg, rgb(237, 222, 191) 2%, rgba(39, 68, 85, 0.685) 100%);
+}
+
+header, .bloc-citation, .nav-footer, .play_presentation, .Quizz, .allBorder,
+.allBorder2 {
+  border-left: 3px solid hsla(0deg, 1%, 45%, 0.247);
+  border-right: 3px solid hsla(0deg, 1%, 45%, 0.247);
+}
+
+textarea {
+  font-family: "Space Grotesk", sans-serif;
+  padding-top: 6px;
+  width: 99%;
+  height: 20px;
+  border: none;
+  border-bottom: 1px solid white;
+  background-color: transparent;
+  outline: none;
+  color: #f1f1f1;
+}
+
+.btn-groupe {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 15px;
+}
+.btn-groupe button {
+  width: 150px;
+  height: 40px;
+  border-image: linear-gradient(160deg, hsl(0deg, 0%, 60%), hsl(198deg, 80%, 28%)) 1;
+  background-color: transparent;
+  color: white;
+  outline: none;
+  margin: 5px;
+}
+
+.bloc-confirmer .confirmer {
+  background: linear-gradient(to right, hsl(40deg, 40%, 84%), hsl(356deg, 60%, 40%));
+  width: 200px;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  border: none;
+  outline: none;
+}
+
+.Quizz .G0 .quiz_btn, .G1 button, .boutonConf button, #btn-start-quizz {
+  background: linear-gradient(123deg, rgb(30, 37, 47) 0%, rgb(180, 131, 70) 65%);
+  width: 280px;
+  height: 60px;
+  font-family: rajhdani;
+  color: white;
+  font-size: 22px;
+  border: none;
+  outline: none;
+}
+
+.content a img:hover,
+.link_logo a img:hover {
+  filter: brightness(0) saturate(100%) invert(91%) sepia(53%) saturate(1342%) hue-rotate(358deg) brightness(103%) contrast(109%);
+}
+
+@font-face {
+  font-family: rajhdani;
+  src: url("../../police/Rajdhani-Medium.ttf");
+}
+@font-face {
+  font-family: spaceGrotesk;
+  src: url("../../police/SpaceGrotesk-VariableFont_wght.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  scroll-behavior: smooth;
+}
+
+#home_body {
+  background-color: #000;
+  background-image: url("../Home/Bathome1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.aside {
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 85%;
+  left: 50%;
+  z-index: 2;
+}
+.aside .aside-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  position: absolute;
+  transform: translate(50%, -50%);
+  right: 0;
+}
+
+h1 {
+  font-family: rajhdani;
+  color: #fff;
+}
+
+p {
+  font-family: spaceGrotesk;
+  color: #fff;
+}
+
+h6 {
+  font-family: rajhdani;
+  color: #fff;
+}
+
+header {
+  margin: 0 auto;
+  width: 85%;
+  border-bottom: 3px solid hsla(0deg, 1%, 45%, 0.247);
+}
+header .link_header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+}
+header .link_header_grp a {
+  font-family: rajhdani;
+  color: #fff;
+  font-size: 36px;
+  margin-top: 0;
+  margin-right: 15px;
+  margin-left: 15px;
+  text-decoration: none;
+}
+header .link_header .indexhome {
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.6rem;
+}
+header .link_header .indexgame {
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.6rem;
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container_paragraphe {
+  margin-top: 200px;
+  margin-right: 0;
+  margin-left: 0;
+  width: 570px;
+  font-family: spaceGrotesk;
+  color: #fff;
+  text-align: center;
+  font-size: 22px;
+}
+.container .title_batman {
+  margin-top: 40px;
+  margin-right: 0;
+  margin-left: 0;
+  font-family: spaceGrotesk;
+  font-size: 36px;
+  color: #fff;
+}
+.container_grpButton {
+  margin-top: 30px;
+  margin-right: 0;
+  margin-left: 0;
+}
+.container a {
+  font-family: rajhdani;
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  display: inline-block;
+  width: 250px;
+  text-align: center;
+  line-height: 60px;
+  margin-top: 0;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+.container_flecheDown {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 140px;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.box {
+  padding: 50px;
+  margin: auto;
+  position: relative;
+}
+.box_paragraphe {
+  width: 800px;
+}
+.box_paragraphe p {
+  text-align: justify;
+  font-size: 18px;
+}
+.box_card {
+  margin-top: 60px;
+  margin-right: 0;
+  margin-left: 0;
+}
+.box_card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: black;
+}
+
+.item_actor {
+  background: rgba(180, 131, 70, 0.1);
+  border-top: 1px rgba(78, 65, 29, 0.7137254902) solid;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.item_actor .acteur {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 70px;
+  border-radius: 40px;
+}
+.item_actor .acteur img {
+  position: absolute;
+  width: 80px;
+  top: 7px;
+  left: 15px;
+}
+.item_actor .acteur h6 {
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: 5px;
+  font-size: 10px;
+  width: 120px;
+  text-align: center;
+}
+
+.Mutli {
+  margin: 0 auto;
+}
+.Mutli .txt_presentation {
+  padding: 60px;
+}
+
+.cart_faddin {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+}
+
+.cart1 {
+  width: 600px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+}
+.cart1 h1 {
+  font-size: 18px;
+  font-weight: 300;
+  margin: 15px;
+}
+.cart1 h2 {
+  font-family: rajhdani;
+  font-size: 15px;
+  font-weight: 300;
+  margin: 15px;
+}
+.cart1 h3 {
+  font-family: rajhdani;
+  font-size: 15px;
+  font-weight: 300;
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: 15px;
+}
+.cart1 h3 span {
+  color: #FFFF00;
+}
+.cart1 p {
+  font-size: 12px;
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: 15px;
+}
+
+.bande_annonce {
+  padding: 60px;
+  position: relative;
+}
+.bande_annonce .iconPlayer {
+  width: 10%;
+  position: absolute;
+  top: 41%;
+  right: 45%;
+  cursor: pointer;
+}
+
+.dropdown-in {
+  position: relative;
+  display: inline-block;
+  width: 99%;
+  height: 20px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  outline: none;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown {
+  margin-top: 10px;
+}
+
+.dropdown-content {
+  font-family: spaceGrotesk;
+  margin-top: 20px;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+  margin-top: 0px;
+  width: 59.5%;
+}
+
+.contact {
+  background: linear-gradient(to top left, #0f2027, #203a43, #2c5364);
+  width: 100%;
+  color: white;
+}
+.contact-bloc {
+  margin: 0 auto;
+  width: 60%;
+}
+.contact form h1 {
+  text-align: center;
+  padding: 50px;
+}
+.contact form label {
+  font-family: spaceGrotesk;
+  font-weight: 400;
+}
+.contact form .label1,
+.contact form h3 {
+  font-size: 20px;
+}
+.contact form .label2 {
+  display: inline-block;
+  width: 65%;
+  margin-top: 30px;
+  margin-right: 0;
+  margin-left: 0;
+  font-family: spaceGrotesk;
+  font-weight: 400;
+  color: #C4C4C4;
+}
+.contact form input[type=text] {
+  width: 100%;
+  padding-top: 10px;
+  font-family: spaceGrotesk;
+  margin-top: 12px;
+  margin-right: 0;
+  margin-left: 0;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #C4C4C4;
+  color: white;
+  font-size: 18px;
+}
+.contact form p {
+  margin-top: 12px;
+  border-bottom: 1px solid #c4c4c4;
+  color: #C4C4C4;
+}
+.contact form h3 {
+  font-family: spaceGrotesk;
+  font-weight: 400;
+  margin-top: 12px;
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom: 12px;
+}
+
+.bloc-confirmer {
+  margin-top: 14px;
+  padding: 50px;
+  text-align: center;
+}
+.bloc-citation {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.bloc-citation .sect-citation {
+  width: 50%;
+}
+
+.citation {
+  max-width: 80%;
+  text-align: center;
+  display: block;
+}
+
+.item-citation {
+  display: flex;
+  padding: 30px;
+}
+
+.item-citation2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cit2 {
+  margin: 12px;
+  font-size: 12px;
+  text-align: center;
+  width: 200px;
+}
+
+.item-citation3 {
+  justify-content: flex-end;
+}
+
+.nav-footer {
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 40px;
+}
+
+.petit-presentation {
+  font-size: 1.2vw;
+  line-height: 20px;
+}
+
+.petit-presentation > img {
+  width: 20px;
+}
+
+.bloc-icon {
+  margin-top: 23px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.bloc-icon > div {
+  margin: 12px;
+}
+
+.bloc-icon > div > img {
+  width: 20px;
+  height: 20px;
+}
+
+.nav-footer {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.corp {
+  margin-left: -91000px;
+}
+
+.bgclick {
+  background-color: rgba(73, 162, 201, 0.6980392157);
+  border: solid 1px #70aec9;
+}
+
+#game_body {
+  background-color: #000;
+  background-image: url("../Game/Batgame_1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.play_presentation {
+  margin: 0 auto;
+  width: 85%;
+  color: white;
+}
+.play_presentation h1 {
+  font-family: rajhdani;
+  font-size: 46px;
+  padding-left: 50px;
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+.play_presentation .container_flecheDown {
+  padding-bottom: 80px;
+}
+
+.Quizz {
+  margin: 0 auto;
+  width: 75%;
+  padding: 5%;
+}
+.Quizz .G0 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Quizz .G0 h1 {
+  text-transform: uppercase;
+  font-size: 30px;
+}
+.Quizz .G0 .img_game {
+  margin-top: 30px;
+  width: 80%;
+}
+.Quizz .G0 .quiz_btn {
+  margin-top: 50px;
+}
+
+.G1 h1 {
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.G1 button {
+  margin-top: 40px;
+}
+
+.link_header_grp a:hover {
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.6rem;
+}
+
+.justiceLeague {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.container,
+.box,
+.justiceLeague,
+.Mutli,
+.contact {
+  position: relative;
+  animation: mymove 3s;
+}
+
+@keyframes mymove {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0%;
+  }
+}
+.allBorder,
+.allBorder2 {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.item_actor {
+  visibility: hidden;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 120px;
+}
+
+.box_card {
+  height: 600px;
+}
+
+.box_card .item {
+  position: relative;
+}
+
+.box_card .item:hover {
+  transform: scale(1.1);
+  transition-duration: 1s;
+}
+.box_card .item:hover .item_actor {
+  visibility: visible;
+}
+
+.caherOUI {
+  opacity: 0;
+  transform: translateX(-200px);
+}
+
+.caherNON {
+  opacity: 1;
+  transform: translateX(0);
+  transition: 800ms;
+}
+
+@keyframes changeOpacity {
+  0% {
+    opacity: 1;
+    background-color: rgb(0, 77, 243);
+    border: 1px solid rgb(182, 0, 0);
+  }
+}
+.question_bloc {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 50px;
+}
+.question_bloc .img-question {
+  width: 300px;
+}
+.question_bloc .questionsComposition {
+  width: 650px;
+}
+.question_bloc .questionsComposition div {
+  color: #fff;
+  background-color: #C4C4C4;
+  margin: 5px;
+  padding: 8px;
+}
+.question_bloc .questionsComposition div label {
+  font-size: 24px;
+  margin-left: 10px;
+}
+
+.boutonConf {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.boutonConf button {
+  margin-top: 100px;
+}
+
+.popup {
+  position: absolute;
+  width: 70%;
+  top: 220px;
+  left: 250px;
+}
+.popup-content {
+  background: linear-gradient(103deg, #665228, #9f682a);
+  width: 80%;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 4px;
+  padding: 4rem 2rem;
+  box-shadow: 0 0 10rem 0 rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+.popup-content h1 {
+  text-decoration: underline;
+}
+.popup-close-btn {
+  position: absolute;
+  right: 1rem;
+  top: 0.75rem;
+  cursor: pointer;
+  color: white;
+}
+.popup-title {
+  margin-bottom: 3.5rem;
+  display: inline-block;
+  position: relative;
+  text-transform: uppercase;
+}
+.popup-title::after {
+  content: "";
+  position: absolute;
+  top: 102%;
+  left: 0;
+  width: 100%;
+}
+.popup-body {
+  margin-bottom: 3.5rem;
+}
+
+/*# sourceMappingURL=styles.css.map */
